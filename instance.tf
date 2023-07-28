@@ -19,7 +19,3 @@ resource "aws_instance" "existing_web_server" {
   }
   instance_type = "t2.micro"
 }
-
-data "aws_instance" "myserver" {
-  instance_id = "i-070a00a7199d92b82"
-}

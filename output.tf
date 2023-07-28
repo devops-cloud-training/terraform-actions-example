@@ -12,7 +12,3 @@ output "instance_private_ip" {
   value       = aws_instance.my_new_web_server[*].private_ip
   description = "This is printing private IP of the instance"
 }
-
-output "myinstance_publicip" {
-  value = data.aws_instance.myserver.public_ip
-}
